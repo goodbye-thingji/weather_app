@@ -15,8 +15,8 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
-        ImageView sun = (ImageView) findViewById(R.id.sunrise);
-        Glide.with(this).load(R.raw.sunrise).into(sun);
+        ImageView iphone = (ImageView) findViewById(R.id.iphone);
+        Glide.with(this).load(R.raw.iphone).into(iphone);
         button = (Button) findViewById(R.id.bt1);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

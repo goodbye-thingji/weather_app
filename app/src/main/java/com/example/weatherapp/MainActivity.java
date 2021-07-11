@@ -1,5 +1,6 @@
 package com.example.weatherapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
@@ -28,28 +29,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        spinner = (Spinner)findViewById(R.id.spinner);
-
-        final ArrayList<String> list = new ArrayList<>();
-        list.add("서울시");
-        list.add("경기도");
-        list.add("인천시");
-        list.add("부산시");
-        list.add("대전시");
-        list.add("대구시");
-        list.add("충청북도");
-        list.add("충청남도");
-        list.add("세종시");
-        list.add("강원도");
-        list.add("부산광역시");
-        list.add("부산광역시");
-        list.add("부산광역시");
-        list.add("부산광역시");
-
-
-        String[] list2 = new String[2];
-        list2[0] = "안녕";
-        list2[1] = "하세요";
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         findViewById(R.id.btnTest).setOnClickListener(new View.OnClickListener() {
             @Override
